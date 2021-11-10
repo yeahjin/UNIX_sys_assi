@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
         childargv[1] = val2;
         childargv[3] = NULL;
         // call the "./client_mmap"
-        if (execv("./client_mmap", childargv) == -1)
+        if (execv("./cli", childargv) == -1)
         {
             perror("execve");
             exit(1);
